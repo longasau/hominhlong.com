@@ -1,0 +1,225 @@
+/*
+
+=====READ ME=====
+
+This stylesheet serves as a prototype and under no circumstance should be used in production.
+
+For the scale of AminoMove project, I recommend using Sass to deal with styling and component construction.
+
+
+*/
+
+body {
+	font-size: 16px;
+    letter-spacing: 0.5px;
+	font-family: 'Roboto';
+	line-height: 1.5;
+	color: #eee;
+	background-color: #262c2f;
+	padding: 0;
+	margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tv-container {
+    width: 1280px;
+    height: 720px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    margin: auto;
+}
+
+.top-bar {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.small-top-bar {
+    height: 35px;
+}
+
+.small-top-bar .client-logo {
+    height: 35px;
+}
+
+.date-container {
+    float: right;
+    text-shadow: 0 2px 5px #333333;
+}
+
+.date-container.small-date {
+    font-size: 17px;
+}
+
+.small-top-bar .date-container {
+    line-height: 35px;
+}
+
+.amino-row {
+    width: 100%;
+    
+}
+
+.swimlane-container {
+    position: relative;
+}
+
+.sm-row .swimlane-container {
+    height: 157px;
+}
+
+.lg-row .swimlane-container {
+    height: 202px;
+}
+
+.amino-item {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-color: #eee;
+    box-shadow: 0 2px 5px #333;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    transform-origin: left;
+}
+
+.sm-item {
+    height: 117px;
+    width: 156px;
+}
+
+.lg-item {
+    height: 162px;
+    width: 216px;
+}
+
+.poster-item {
+    height: 162px;
+    width: 108px;
+}
+
+.prev-item {
+    opacity: 0;
+    transform: translateX(14%);
+}
+
+.amino-row:hover .prev-item {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.row-logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.logo-title-container {
+    width: 90px;
+    text-align: center;
+}
+
+.row-logo {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(238, 238, 238, 0.3);
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 0.1s ease-in-out;    
+}
+
+.row-logo>i {
+    font-size: 35px;
+    transition: all 0.1s ease-in-out;
+}
+
+.row-title {
+    color: #aaa;
+    font-size: 13px;
+    transition: all 0.1s ease-in-out;
+}
+
+.amino-row:hover .row-logo {
+    background-color: #eee;
+}
+
+.amino-row:hover .row-logo>i {
+    color: #333;
+}
+
+.amino-row:hover .row-title {
+    color: #eee;
+}
+
+.amino-row:hover .amino-item.selected {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px #333;
+    z-index: 2;
+}
+
+.description-container {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    transition: all 0.1s ease-in-out;
+    font-weight: 300;
+}
+
+.item-title, .item-description {
+    width: 640px;
+    position: absolute;
+    left: 180px;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.amino-row:hover .description-container {
+    height: 105px;
+}
+
+.amino-row:hover .description-container.title-only {
+    height: 55px;
+}
+
+.amino-row:hover .item-title, .amino-row:hover .item-description {
+    opacity: 1;
+}
+
+.item-title {
+    font-size: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 35px;
+    font-weight: 700;
+}
+
+.item-description {
+    top: 35px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

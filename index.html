@@ -2,17 +2,20 @@
 <html lang="en">
 	<head>
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<title>Long's portfolio</title>
+		<title>Didier Lassaro - A design studio by Ho Minh Long</title>
 		<meta name="author" content="Ho Minh Long">
-		<meta name="description" content="online portfolio of digital designer Ho Minh Long">
-  		<meta name="keywords" content="design, designer, web development, digital design, portfolio, HTML, CSS, JavaScript, contact, freelancer, Finland, Helsinki">
+		<meta name="description" content="UI/UX Design, Front End Development and Graphic Design">
+  		<meta name="keywords" content="UI, UX, User Interface, User Experience, UI design, UX design, design, designer, web development, front end development, digital design, portfolio, HTML, CSS, JavaScript, contact, freelancer, Finland, Helsinki">
+  		<meta property="og:title" content="Didier Lassaro - A design studio by Ho Minh Long" />
+  		<meta property="og:description" content="UI/UX Design, Front End Development and Graphic Design" />
+  		<meta property="og:url" content="http://www.hominhlong.com/" />
+		<meta property="og:image" content="http://www.hominhlong.com/images/didier-lassaro-banner-featured.png" />
 		<meta name="author" content="Ho Minh Long">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 		<link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-  		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,vietnamese,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
 
 		<!-- Latest compiled and minified JavaScript -->
@@ -23,6 +26,15 @@
 		<script src="/js/imagelightbox.min.js"></script>	
 		<script src="/js/main.js"></script>	
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42037424-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42037424-2');
+		</script>
 	
 	</head>
 	<body>	
@@ -35,16 +47,38 @@
 			      <span class="icon-bar two"></span>
 			      <span class="icon-bar three"></span>
 			    </button>
-			    <a class="navbar-brand" rel="landing-page" href="#landing-page"><div class="home-logo"></div></a>
+			    <a class="navbar-brand" rel="landing-page" href="#landing-page">
+			    	<div class="home-logo">
+			    		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+			    			<title>hml-logo</title>
+			    			<rect class="a" x="586" y="870" width="413" height="130"/>
+			    			<rect class="a" x="1" y="870" width="413" height="130"/>
+			    			<rect class="a" y="522" width="1000" height="130"/>
+			    			<rect class="a" y="696" width="1000" height="130"/>
+			    			<rect class="a" x="586" y="348" width="413" height="130"/>
+			    			<rect class="a" y="348" width="413" height="130"/>
+			    			<rect class="a" x="586" y="174" width="413" height="130"/>
+			    			<rect class="a" y="174" width="413" height="130"/>
+			    			<rect class="a" x="586" width="413" height="130"/>
+			    			<rect class="a" width="413" height="130"/></svg>
+			    	</div>
+			    </a>
 			  </div>
 
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div id="navlink-container" class="collapse navbar-collapse">
 			    <ul class="nav navbar-nav">
 			      <li><a rel="about-me" href="#about-me">About me</a></li>
-			      <li><a rel="case-studies" href="#case-studies">Case studies</a></li>
-			      <li><a rel="work-samples" href="#work-samples">Work samples</a></li>
-			      <li><a rel="artistry" href="#artistry">Artistry</a></li>
+			      <li>
+			      	<a rel="ui-design" href="#ui-design">UI/UX Design</a>
+			      	<ul class="sub-nav">
+			      		<li><a href="#vifi">Vifi</a></li>
+			      		<li><a href="#boox">BooxTV</a></li>
+			      		<li><a href="#highcharts">Highcharts</a></li>
+			      		<li><a href="#midaxo">Midaxo</a></li>
+			      	</ul>
+			      </li>
+			      <li><a rel="graphic-design" href="#graphic-design">Graphic Design</a></li>
 			      <li><a rel="contact" href="#contact">Contact</a></li>
 			      <li class="social"><a href="https://www.linkedin.com/in/longasau" target="_blank"><div id="linkedin" class="social-icon"></div></a></li>
 			    </ul>
@@ -58,6 +92,9 @@
 				<div class="col-xs-10 col-sm-11">
 					<div class="punchline">
 						Just like music or literature, digital design is kind of an art. A designer's job is to embrace the beauty of human nature.
+						<div class="circle"></div>
+						<div class="rectangle"></div>
+						<div class="triangle"></div>
 					</div>
 				</div>
 				<div class="col-xs-1 col-sm-offset-1"></div>
@@ -73,11 +110,11 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Beyond a beautiful interface...</h4>
-					<p>My specialties vary from user interface design and web development to graphic design. But what makes me really different is a vision toward digital human interface. I believe that every interactive method between people and the computer should be simply functional and beautiful.</p>
+					<p>My specialties vary from user interface design and web development to graphic design. But what makes me really different is a vision toward digital human interface. I believe that every interactive method between people and computer should be simply functional and beautiful.</p>
 				</div>
 				<div class="col-md-6">
 					<h4>A passion to inspire people</h4>
-					<p>Design and branding go hand in hand. An effective design not only reaches out to target customers but also reflects the brand's values. I use my skill set to translate my client's ideas into astonishing, responsive web interface that inspires and satisfies their audiences.</p>
+					<p>Design and branding go hand in hand. An effective design not only reaches out to target customers but also reflects the brand's values. I use my skills to translate my client's ideas into astonishing, responsive web interface that inspires and satisfies their audiences.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -89,14 +126,14 @@
 				</div>
 				<div class="col-md-12 hidden-break"></div>
 				<div class="col-md-3 col-xs-6">
-					<div class="percentage-square half" data-toggle="tooltip" data-placement="top" title="Somewhat capable"></div>
+					<div class="percentage-square seven-five" data-toggle="tooltip" data-placement="top" title="Something to learn"></div>
 					<h5>Communication</h5>
-					<p>Readiness to present ideas & opinions</p>
+					<p>Readiness to present & defend ideas</p>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square full" data-toggle="tooltip" data-placement="top" title="Full expertise"></div>
 					<h5>Team working</h5>
-					<p>An active and devote team player</p>
+					<p>An active & devoted team player</p>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square seven-five" data-toggle="tooltip" data-placement="top" title="Something to learn"></div>
@@ -105,8 +142,8 @@
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square seven-five" data-toggle="tooltip" data-placement="top" title="Something to learn"></div>
-					<h5>Organizing</h5>
-					<p>Scheduling works and keeping deadlines</p>
+					<h5>Reliability</h5>
+					<p>Working independently and productively</p>
 				</div>
 			</div>
 			<div class="col-md-12 hidden-break"></div>
@@ -118,21 +155,21 @@
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square full" data-toggle="tooltip" data-placement="top" title="Full expertise"></div>
 					<h5>UI design</h5>
-					<p>Design responsive, user-friendly websites and smart devices applications.</p>
+					<p>Design responsive, user-friendly websites & applications.</p>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square full" data-toggle="tooltip" data-placement="top" title="Full expertise"></div>
 					<h5>Graphic design</h5>
-					<p>Create, fine-tune and optimize graphical elements or images for electronic usage.</p>
+					<p>Create, fine-tune & optimize graphical elements or images.</p>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square seven-five" data-toggle="tooltip" data-placement="top" title="Something to learn"></div>
 					<h5>Web development</h5>
-					<p>Design, build, and manage corporate websites with different CMS.</p>
+					<p>Design, build, & manage corporate websites using different CMS.</p>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="percentage-square half" data-toggle="tooltip" data-placement="top" title="Somewhat capable"></div>
-					<h5>Print & Office design</h5>
+					<h5>Print & MS Office design</h5>
 					<p>Design ready-to-print materials like brochure, leaflet, banner as well as MS Office templates.</p>
 				</div>
 			</div>
@@ -162,7 +199,7 @@
 				<div class="col-md-12">
 					<blockquote>
 						<p>Mr. Ho Minh Long  had clear and well-thought proposals for development of the service. His proposals covered also other aspect of the service than pure design...</p>
-						<footer>Katja Ratamäki from <cite title="">Rategia</cite></footer>
+						<footer>Katja Ratamaki from <cite title="">Rategia</cite></footer>
 					</blockquote>
 				</div>
 			</div>
@@ -175,159 +212,251 @@
 			</div>
 		</div>
 
-		<div id="case-studies" class="container-fluid page" style="display: none;">
-			<div class="row">
-				<div class="col-md-12"><h2>beta.vifi.ee</h2></div>
-				<div class="col-md-12"><p class="project-role">Wireframe • UI/UX design • Frontend development • Graphic design • Testing</p></div>
-			</div>
-			<div class="row project-banner">
-				<img title="vifi" src="images/vifi-screenshot-1.jpg"/>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p><a href="www.vifi.ee" target="_blank">Vifi</a> is a leading VOD service in Estonia. Operated since 2010, Vifi has over 10,000 titles in its collection, ranging from movie to TV series. In 2014, it launches an application for Samsung Smart TV - the first of its kind in the Baltic region. I am responsible for re-designing Vifi's web interface as well as establishing a uniform brand recognation accross different platforms.</p>
+		<div id="ui-design" class="container-fluid page" style="display: none;">
+
+			<div id="vifi">
+				<div class="row project-banner">
+					<img title="Vifi" src="images/vifi-banner.jpg"/>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h4>A five years old interface</h4>
-					<p>Vifi's layout was very outdated, partly because they could not predict how fast can the service grow in just a couple of years. The structure of the website is very simple, almost too simple that it cannot host all the new and upcoming features. As Vifi grew, the layout became more and more inconsistent. Besides, the website is not responsive. It's just the matter of time until the company's owners realized that they need a better user interface.</p>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="project-header">
+							<div class="project-title">
+								<h1>Vifi</h1>
+							</div>
+							<div class="project-description">
+								<p>www.vifi.ee</p>
+								<p>Lead UI/UX Designer</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<h4>Not just better...</h4>
-					<p>The first thing I knew that I should do with Vifi is, of course, to deliver our visitor a more modern experience. It should be friendly enough for everybody, from a school girl to a retired grandma, to be able to use. Besides, since there are more people watching videos on their mobile devices, responsiveness is one of the key points to boost the service's accessibility. Last but not least, the layout should also be flexible and easy to update.</p>
+				<div class="row">
+					<div class="col-md-12">
+						<p><a href="http://www.vifi.ee/" target="_blank">Vifi</a> is a leading VOD service in Estonia. Operated since 2010, Vifi has over 10,000 titles in its collection, ranging from movie to TV series. In 2014, it launches an application for Samsung Smart TV - the first of its kind in the Baltic region. I am responsible for re-designing Vifi's web interface as well as establishing a uniform brand recognation accross different platforms.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row project-banner">
-				<img title="vifi" src="images/vifi-before-after.jpg"/>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h4>Search. Pay. Watch.</h4>
-					<p>Because Vifi has a very extensive library, I understood that we have to focus on making the search function work really well so that users can find what they want quickly. In the new design, besides searching by keywords, users can also filter the result based on category, release date and length of the movie. The filter bar looks extremely minimalistic. Users can switch betweens tabs by clicking or swifting their fingers on a touch screen. As soon as they tick a check box, the result list will be shorterned down immediately. The whole experience feel effortlessly smooth.
+				<div class="row">
+					<div class="hidden-break"></div>
 				</div>
-				<div class="col-md-6 project-image">
-					<img title="Vifi search and filter function" src="images/vifi-search-feature.jpg" />
+				<div class="row project-banner">
+					<a href="images/vifi-screenshot-4-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Vifi - Home page">
+						<img alt="Vifi - Home page" src="images/vifi-screenshot-4.jpg"/>
+					</a>
 				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<h4>A seamless experience across different devices</h4>
-					<p>In 2014, Vifi partnered with Samsung to launch the first VOD application for smart TV in Estonia. The app should explore the uniqueness of smart TV's OS, and at the same time reflect Vifi's signature appearance. Designing UI for TV is very challenging. The different screen sizes require a whole new approach to layout construction. User's behavior is also different. Instead of mouse or touch screen, users interact with the devices through remote control and gestures. Thus, I needed to re-think the whole concept for the UI. There are four main points:</p>
+				<div class="row">
+					<div class="hidden-break"></div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-xs-6">
-					<h5>Navigation</h5>
-					<p>Instead of clicking, users navigates in smart TV through the hotkeys: up, down, left and right. Our navigation should be categorized according to this.</p>
+				<div class="row project-banner">
+					<a href="images/vifi-screenshot-1.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Vifi - Movie page">
+						<img alt="Vifi - Movie page" src="images/vifi-screenshot-1.jpg"/>
+					</a>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<h5>Readability</h5>
-					<p>Although the screen size of the TV is bigger, but the actual effective area for content is much less. People don't want to read a lot of info on a TV screen.</p>
+				<div class="row">
+					<div class="hidden-break"></div>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<h5>Simplicification</h5>
-					<p>We could not bring everything from the desktop version to the TV one, at least in the first release. Basic features must feel great to use.</p>
+				<div class="row project-banner">
+					<a href="images/vifi-screenshot-3.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Vifi - Pricing page">
+						<img alt="Vifi - Pricing page" src="images/vifi-screenshot-3.jpg"/>
+					</a>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<h5>Continuity</h5>
-					<p>The TV app does not stand alone, nor do the desktop and mobile apps. The users want to switch between devices without any interuption.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row project-banner">
-				<img title="vifi" src="images/vifi-screenshot-3.jpg"/>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
 			</div>
 			<div class="row">
 				<div class="break"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-12"><h2>www.midaxo.com</h2></div>
-				<div class="col-md-12"><p class="project-role">Wireframe • UI/UX design • Features mock-ups and presentation • Frontend development • Graphic design</p></div>
-			</div>
-			<div class="row project-banner">
-				<img title="vifi" src="images/early-evaluation.png"/>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p><a href="www.midaxo.com" target="_blank">Midaxo</a> is a process management platform specialized for professional M&A teams. Midaxo helps M&A professionals drive disciplined processes to ensure systematic evaluation, avoid risks, and capture synergies quicker. It features 3 levels: overall pipeline management, sepecific project management, and detailed task list management. Midaxo has a very complex permission control setting to ensure all information in the platform are distributed to the right persons in the right time. The platform's competitiveness also lies in its easy-to-use interface and high level of configurability.</p>
+			<div id="boox">
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<img title="Boox Tv" src="images/boox-banner.jpg"/>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="project-header">
+							<div class="project-title">
+								<h1>BooxTV</h1>
+							</div>
+							<div class="project-description">
+								<p>booxdemo.aminocom.com/html5_amino/</p>
+								<p>UI/UX Designer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p><a href="https://booxdemo.aminocom.com/html5_amino/" target="_blank">BooxTV</a> is a platform for TV service providers to stream their programs on different types of devices, from mobiles, tablets to Set-Top-Boxes. As the main UI/UX Designer, I was in charge to design a common interface that can be easily customized and modulized to specific clients, yet easy to take on for end users.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/boox-screenshot-1-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="BooxTV on Desktop">
+						<img alt="BooxTV on Desktop" src="images/boox-screenshot-1.jpg"/>
+					</a>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/boox-screenshot-2-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="BooxTV on STB - Home page">
+						<img alt="BooxTV on STB - Home page" src="images/boox-screenshot-2.jpg"/>
+					</a>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/boox-screenshot-3-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="BooxTV on STB - Program guide">
+						<img alt="BooxTV on STB - Program guide" src="images/boox-screenshot-3.jpg"/>
+					</a>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/boox-screenshot-4-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="BooxTV on STB - On Now Program">
+						<img alt="BooxTV on STB - On Now program" src="images/boox-screenshot-4.jpg"/>
+					</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="hidden-break"></div>
+				<div class="break"></div>
+			</div>
+			<div id="highcharts">
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<img title="Highcharts" src="images/hc-banner.jpg"/>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="project-header">
+							<div class="project-title">
+								<h1>Highcharts</h1>
+							</div>
+							<div class="project-description">
+								<p>www.highcharts.com</p>
+								<p>UI/UX Designer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p><a href="https://www.highcharts.com/" target="_blank">Highcharts</a> is a charting library written in pure JavaScript, offering an easy way of adding interactive charts to your web site or web application. I was working for Highsoft - the great company behind Highcharts - as a freelancer from 2015 to 2017. I helped them revamp their website along with their virtual shop. Later, I participate in developing the UI for Highcharts Editor, a JavaScript/CSS library for Highcharts 5 which enables non-programmers to easily create and publish charts</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/hc-screenshot-2-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Highcharts Shop">
+						<img alt="Highcharts Shop" src="images/hc-screenshot-2.jpg"/>
+					</a>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/hc-screenshot-3-full.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Highcharts Editor">
+						<img alt="Highcharts Editor" src="images/hc-screenshot-3.jpg"/>
+					</a>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 hidden-sm"></div>
+					<div class="col-md-8 col-sm-12">
+						<div class="video-wrapper">
+							<iframe width="100%" height="auto" src="https://www.youtube.com/embed/K68icr3D7QI?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
-					<blockquote>
-						<p>There is no tool that compares to Midaxo in terms of ease of use and user-friendly interface. I would definitely recommend Midaxo and suggest investing the right amount of time to configure it to your practice for the best leverage of a great platform.</p>
-						<footer>Sergio E. Letelier from <cite title="Hewlett Packard">HP</cite>. Source: www.midaxo.com</footer>
-					</blockquote>					
-				</div>
-			</div>	
-			<div class="row">
-				<div class="hidden-break"></div>
+				<div class="break"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-6 gif-image">
-					<img src="images/demo1.gif" data-toggle="tooltip" data-placement="top" title="Drag and drop to change a project's stage in Midaxo Pipeline"/>
+			<div id="midaxo">
+				<div class="row">
+					<div class="hidden-break"></div>
 				</div>
-				<div class="col-md-6">
-					<h4>Finding the right balance</h4>
-					<p>Midaxo's target customers are corporate and businessmen who are very busy, so we need to design the platform in a way that all important information can be easily accessible within a blink of an eye. However, we must differ ourselves from other die-hard corporate softwares in a market. The user interface should be modern, interactive, but not too complicated. Every gesture such as drag-and-drop, zoom should be carefully planned to ensure convenience.</p>
+				<div class="row project-banner">
+					<img title="Midaxo" src="images/midaxo-on-laptop.png"/>
 				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<h4>User interface is not only a part of the product. It is the product.</h4>
-					<p>At Midaxo, we understand that a good user interface is the one that enables our users to discover the platform from A to Z without any difficulties. It is not something that we applied at the end of the development process to make things prettier. Planning for user experience took place at the very beginning. It is the glue that keep every features, plug-ins, widgets together. Thanks to this, our platform's user interface has received numberous compliments from our customers as well as external audits.</p>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="project-header">
+							<div class="project-title">
+								<h1>Midaxo</h1>
+							</div>
+							<div class="project-description">
+								<p>www.midaxo.com</p>
+								<p>Lead UI/UX Designer</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row project-banner">
-				<img src="images/midaxo-platform-main.jpg" />
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-xs-6 award-image">
-					<img src="images/red-herring-100-finalist.jpg" data-toggle="tooltip" data-placement="top" title="Red Herring Top 100 Finalist"/>
+				<div class="row">
+					<div class="col-md-12">
+						<p><a href="http://www.midaxo.com/" target="_blank">Midaxo</a> is a process management platform specialized for professional M&A teams. Midaxo helps M&A professionals drive disciplined processes to ensure systematic evaluation, avoid risks, and capture synergies quicker. Midaxo's target customers are corporate and businessmen who are very busy, so we need to design the platform in a way that all important information can be easily accessible within a blink of an eye. Planning for user experience took place at the very beginning. It is the glue that keep every features, plug-ins, widgets together. At Midaxo, ser interface is not only a part of the product. It is the product. </p>
+					</div>
 				</div>
-				<div class="col-md-3 col-xs-6 award-image">
-					<img src="images/mergers-acquisitions-logo.jpg" data-toggle="tooltip" data-placement="top" title="Innovative Service Provider 2015"/>
+				<div class="row">
+					<div class="hidden-break"></div>
 				</div>
-				<div class="col-md-3 col-xs-6 award-image">
-					<img src="images/ma-today-global-award.jpg" data-toggle="tooltip" data-placement="top" title="Global M&A Software Solution 2014 & 2015"/>
+				<div class="row">
+					<div class="col-md-12">
+						<blockquote>
+							<p>There is no tool that compares to Midaxo in terms of ease of use and user-friendly interface. I would definitely recommend Midaxo and suggest investing the right amount of time to configure it to your practice for the best leverage of a great platform.</p>
+							<footer>Sergio E. Letelier from <cite title="Hewlett Packard">HP</cite>. Source: www.midaxo.com</footer>
+						</blockquote>					
+					</div>
+				</div>	
+				<div class="row">
+					<div class="hidden-break"></div>
 				</div>
-				<div class="col-md-3 col-xs-6 award-image">
-					<img src="images/legal-award.jpg" data-toggle="tooltip" data-placement="top" title="Global M&A Software Solution 2014"/>
+				<div class="row project-banner">
+					<a href="images/midaxo-on-laptop-5-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo on Laptop - Gantt Tree">
+						<img alt="Midaxo on laptop" src="images/midaxo-on-laptop-5-full.jpg"/>
+					</a>
 				</div>
-			</div>					
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row project-banner">
+					<a href="images/midaxo-on-laptop-4-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo on Computer - Pipeline">
+						<img alt="Midaxo on Computer - Pipeline" src="images/midaxo-on-laptop-4-full.jpg"/>
+					</a>
+				</div>
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-6 award-image">
+						<img src="images/red-herring-100-finalist.jpg" data-toggle="tooltip" data-placement="top" title="Red Herring Top 100 Finalist"/>
+					</div>
+					<div class="col-md-3 col-xs-6 award-image">
+						<img src="images/acq5-2017.png" data-toggle="tooltip" data-placement="top" title="ACQ5 Global Awards - M&A Software Platform of the year""/>
+					</div>
+					<div class="col-md-3 col-xs-6 award-image">
+						<img src="images/ma-today-global-award.jpg" data-toggle="tooltip" data-placement="top" title="M&A Todays Global - Global M&A Software Solution 2014 & 2015"/>
+					</div>
+					<div class="col-md-3 col-xs-6 award-image">
+						<img src="images/ux-award.png" data-toggle="tooltip" data-placement="top" title="UX Magazine Awards - Top Business Experience Award"/>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="hidden-break"></div>
+				</div>
+			</div>		
 			<div class="row footer">
 				<div id="hml-signature">
 					<img src="https://ravenambition.files.wordpress.com/2013/09/rick_riordan_signature.png" title="Ho Minh Long" />
@@ -337,58 +466,32 @@
 			</div>
 		</div>
 
-		<div id="work-samples" class="container-fluid page" style="display: none;">
+		<div id="graphic-design" class="container-fluid page" style="display: none;">
 			<div class="row">
-				<div class="col-md-12">
-					<h2 class="align-center">Web and software design</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-xs-6">
-					<a href="images/work-samples/midaxo-platform-main.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo M&A platform">
-						<img src="images/midaxo-platform-thumb.jpg" alt="Midaxo M&A Platform - 2013-2015"/>
+				<div class="col-md-4 col-xs-6">
+					<a href="images/midaxo-rollup-1-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Recruitment Event Roll Up for Midaxo">
+						<img src="images/midaxo-rollup-1-thumbnail.jpg" alt="Recruitment Event Roll Up for Midaxo"/>
 					</a>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<a href="images/work-samples/midaxo-website-main.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo responsive homepage">
-						<img src="images/midaxo-website-thumb.png" alt="Midaxo website - 2013-2015" />
+				<div class="col-md-4 col-xs-6">
+					<a href="images/midaxo-rollup-2-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Recruitment Event Roll Up for Midaxo">
+						<img src="images/midaxo-rollup-2-thumbnail.jpg" alt="Recruitment Event Roll Up for Midaxo"/>
 					</a>
 				</div>
-				<div class="col-md-3 col-xs-12">
-					<a href="images/work-samples/vifi-platform-main.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Vifi cross-browser VOD platform">
-						<img src="images/vifi-platform-thumb.jpg" alt="Vifi VOD Platform - 2014-2015" />
+				<div class="hidden-lg hidden-md col-sm-3 col-xs-3">
+				</div>
+				<div class="col-md-4 col-xs-6">
+					<a href="images/midaxo-rollup-3-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Product Intro Roll Up for Midaxo">
+						<img src="images/midaxo-rollup-3-thumbnail.jpg" alt="Product Intro Roll Up for Midaxo"/>
 					</a>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<a href="images/work-samples/vifi-tv-app-main.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Vifi smart TV app">
-						<img src="images/vifi-tv-app-thumb.jpg" alt="Vifi Smart TV App - 2014-2015" />
-					</a>
-				</div>
-				<div class="col-md-3 col-xs-6">
-					<a href="/images/work-samples/canda-website-main.png" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Canda homepage">
-						<img src="images/canda-thumb.jpg"  alt="Canda homepage - 2014"/>
-					</a>
-				</div>
-				<div class="col-md-9 col-xs-12">
-					<blockquote>
-						<p>Long was a valuable member of the team. His ability to transform ideas into concrete design was exeptional.</p>
-						<footer>Andrew Hale from <cite title="Infusion Oy">Infusion Suomi Oy</cite></footer>
-					</blockquote>						
-				</div>
-			</div>
-			<div class="row">
-				<div class="break"></div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="align-center">Graphic and print design</h2>
+					<a href="/images/midaxo-ad-1-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo Ad on Magazine - size A4">
+						<img src="images/midaxo-ad-1-thumbnail.jpg" alt="Midaxo Ad on Magazine - size A4"/>
+					</a>
 				</div>
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
@@ -417,30 +520,36 @@
 					</a>
 				</div>
 			</div>
-			<div class="row footer">
-				<div id="hml-signature">
-					<img src="https://ravenambition.files.wordpress.com/2013/09/rick_riordan_signature.png" title="Ho Minh Long" />
-				</div>
-				<p>Ho Minh Long</p>
-				<p>UI/UX Designer & Frontend Developer</p>
-			</div>
-		</div>
-
-		<div id="artistry" class="container-fluid page" style="display: none;">
-			<div class="row align-center">
-				<img src="images/like-an-artist.jpg" id="like-an-artist" alt="Bloom like an artist - JellyVampire" />
-			</div>
-			<div class="row">
-				<div class="hidden-break"></div>
-			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h4 class="align-center">Thank you <a href="http://jellyvampire.deviantart.com/art/Like-an-artist-197147822" target="_blank">JellyVampire</a> for this lovely comic.</h4>
+					<a href="/images/midaxo-office-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Set of Different Office Accessories for Midaxo">
+						<img src="images/midaxo-office-thumbnail.jpg" alt="Set of Different Office Accessories for Midaxo"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<a href="/images/midaxo-bag-1-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo Tote Bag">
+						<img src="images/midaxo-bag-1-thumbnail.jpg" alt="Midaxo Tote Bag"/>
+					</a>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<a href="/images/midaxo-bag-2-full.jpg" class="thumbnail expand" data-toggle="tooltip" data-placement="top" title="Midaxo Tote Bag">
+						<img src="images/midaxo-bag-2-thumbnail.jpg" alt="Midaxo Tote Bag"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<blockquote>
+						<p>Long was a valuable member of the team. His ability to transform ideas into concrete design was exeptional.</p>
+						<footer>Andrew Hale from <cite title="Infusion Oy">Infusion Suomi Oy</cite></footer>
+					</blockquote>						
 				</div>
 			</div>
 			<div class="row footer">
 				<div id="hml-signature">
-					<img src="https://ravenambition.files.wordpress.com/2013/09/rick_riordan_signature.png" title="Ho Minh Long" />
+					<img src="images/signature.png" title="Ho Minh Long" />
 				</div>
 				<p>Ho Minh Long</p>
 				<p>UI/UX Designer & Frontend Developer</p>
@@ -451,7 +560,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h2>Just say <a href="mailto:hi@hominhlong.com">hi@hominhlong.com</a></h2>
-					<p>I'm interested in freelance and part-time projects, regardless of the size or duration. If your website needs a kick-ass user interface, or your poster ad needs an artistic touch to reach to its audiences, just shoot me a message. Location is not a problem, since I'm more than willing to work remotely. I would also love to hear about opportunities for partnership and entrepreneurship.</p>
+					<p>I'm interested in freelance and part-time projects, regardless of size or duration. Whether your website needs a kick-ass user interface, or your poster ad needs an artistic touch, just shoot me a message. Location is not a problem, since I'm capable of working remotely and independently. I would also love to hear about opportunities for partnership and entrepreneurship.</p>
 					<p>Alternatively, you can send me a message with the form below. Inquiry, job offer, testimonial, anything is welcomed!</p>
 				</div>
 			</div>

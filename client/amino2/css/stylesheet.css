@@ -1,0 +1,1378 @@
+/*
+
+=====READ ME=====
+
+This stylesheet serves as a prototype and under no circumstance should be used in production.
+
+For the scale of AminoMove project, I recommend using Sass to deal with styling and component construction.
+
+
+*/
+
+body {
+	font-size: 15px;
+	font-family: 'Roboto';
+	line-height: 1.5;
+	color: #333;
+	background-color: #262c2f;
+	background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+    background-color: #232729;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    font-size: 23px;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover, .menu a:focus, .menu a:active{
+    color: #aaa;
+}
+
+.second-menu {
+    background: rgba(73, 83, 88, 0.95);
+}
+
+.modal-body .second-menu {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.switch-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.switch-list a {
+    color: #aaa;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.switch-list a:hover, .switch-list a:focus, .switch-list a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.switch-list a.selected, .switch-list a.selected:hover {
+    background: #fff;
+    color: #333;
+}
+
+.page-body-container {
+    padding-top: 45px;
+    position: relative;
+}
+
+.menu-container {
+    width: 280px;
+    top: 45px;
+    bottom: 0;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(35, 39, 41, 0.95);
+    z-index: 2;
+}
+
+.nav-menu {
+    margin: 0 0 60px 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #aaa;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.nav-menu a {
+    color: #aaa;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 10px 15px;
+    transition: background 0.2s linear, color 0.2s linear, padding-left 0.2s linear;
+}
+
+.nav-menu a:hover, .nav-menu a:focus, .nav-menu a:active {
+    background: rgba(238, 238, 238, 0.2);
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.nav-menu a.selected {
+    color: #2390ff;
+}
+
+.nav-menu a.selected:hover, .nav-menu a.selected:focus, .nav-menu a.selected:active {
+    background: transparent;
+    padding-left: 15px;
+}
+
+.page-title {
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.page-body {
+    width: 1170px;
+    margin: auto;
+    background-color: #3d484e;
+    color: #fff;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.banner-list {
+    list-style-type: none;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+span.cat-tag {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    border: 1px solid;
+    padding: 3px 10px;
+    margin-right: 2px;
+    border-radius: 3px;
+}
+
+.banner-list li {
+    display: flex;
+    min-width: 580px;
+    margin: 0 20px;
+}
+
+.banner-item {
+    width: 100%;
+    text-align: left;
+    background-image: url('../images/starwars.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 75%;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px 0;    
+    box-shadow: 0 2px 5px #333;
+    transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
+
+.banner-item.selected {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 16px #333;
+}
+
+.banner-item2 {
+    width: 100%;
+    text-align: left;
+    background-image: url('../images/lego.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 75%;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px 0;    
+    box-shadow: 0 2px 5px #333;
+    transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
+
+.banner-item3 {
+    width: 100%;
+    text-align: left;
+    background-image: url('../images/guardians.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 75%;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px 0;    
+    box-shadow: 0 2px 5px #333;
+    transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
+.banner-list li:first-child, .banner-list li:last-child {
+    margin: 0;
+}
+
+.banner-list li:first-child .banner-item {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.banner-list li:last-child .banner-item{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.banner-item-content {
+    position: absolute;
+    width: 100%;
+    white-space: normal;
+    padding: 20px;
+    bottom: 0;
+    background: rgba(92, 108, 115, 0.85);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.amino-item {
+    background: #2d3438;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s linear, shadow 0.2s linear;
+}
+
+.amino-item.static-item {
+    box-shadow: none;
+}
+
+.amino-item:hover, .amino-item:focus, .amino-item:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 16px #333;
+}
+
+.amino-item.static-item:hover, .amino-item.static-item:focus, .amino-item.static-item:active {
+    transform: none;
+    box-shadow: none;
+}
+
+.item-image {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/topgear.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image2 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/game-of-thrones.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image3 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/spongebob.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image4 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/westwing.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image5 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/simpsons.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image6 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/modern.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image7 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/newgirl.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-image8 {
+    width: 100%;
+    padding-bottom: 75%;
+    background-image: url(../images/tbbt.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item-content {
+    padding: 15px;
+    color: #eee;
+}
+
+.title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.item-content .title {
+    font-size: 15px;
+}
+
+.item-content .description {
+    font-size: 13px;
+    height: 56px;
+    overflow: hidden;
+}
+
+.interactive-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 108, 115, 0.85);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.amino-item:hover .interactive-panel, .amino-item:focus .interactive-panel, .amino-item:active .interactive-panel {
+    opacity: 1;
+}
+
+ul.item-button-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+ul.item-button-container li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.item-button {
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px #333;
+    transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
+
+.item-button:hover, .item-button:focus, .item-button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 16px #333;
+}
+
+.item-button:before {
+    font-family: fontAwesome;
+    font-size: 23px;
+    line-height: 50px;
+    color: #717f86;
+}
+
+.item-button.play:before {
+    content: "\f04b";
+}
+
+.item-button.replay:before {
+    content: "\f1da";
+}
+
+.item-button.info:before {
+    content: "\f129";
+}
+
+.item-button.episode:before {
+    content: "\f009";
+}
+
+.item-footer {
+    padding: 0 15px 15px 15px;
+}
+
+.item-footer .channel-logo {
+    width: 35px;
+    height: 35px;
+    background-color: #eee;
+    background-image: url(../images/bbc.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.item-footer .channel-logo2 {
+    width: 35px;
+    height: 35px;
+    background-color: #eee;
+    background-image: url(../images/bbc2small.png);
+    background-size: cover;
+    border-radius: 3px;
+}
+.item-footer .channel-logo3 {
+    width: 35px;
+    height: 35px;
+    background-color: #eee;
+    background-image: url(../images/itvsmall.png);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.item-footer .channel-logo4 {
+    width: 35px;
+    height: 35px;
+    background-color: #eee;
+    background-image: url(../images/ch4small.png);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.control-button-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.control-button-list li {
+    margin-left: 7px;
+}
+
+.control-button {
+    font-size: 20px;
+    color: #aaa;
+    transition: color 0.2s linear;
+}
+
+.control-button.record.selected {
+    color: #ff4d4d;
+}
+
+.control-button.favourite.selected {
+    color: #e298c4;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.container-fluid.amino-row {
+    padding: 10px 15px;
+}
+
+.amino-row {
+    position: relative;
+}
+
+.container-fluid.banner-row {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.amino-row:nth-child(even) {
+    background: rgba(238, 238, 238, 0.15);
+}
+
+.section-header {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p.section-title {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.section-link a {
+    color: #94aab5;
+}
+
+.amino-item.featured-item {
+    position: relative;
+}
+
+.featured-item .item-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(92, 108, 115, 0.85);
+}
+
+.featured-item.with-progress-bar .item-content {
+    bottom: 6px;
+}
+
+.featured-item .item-content .title {
+    font-size: 17px;
+}
+
+.featured-item .item-content .description {
+    font-size: 15px;
+}
+
+.amino-progress-bar {
+    height: 6px;
+    background: #111;
+    position: relative;
+    overflow: hidden;
+}
+
+.channel-info .amino-progress-bar {
+    width: 90%;
+}
+
+.amino-progress-bar.with-time {
+    height: 28px;
+}
+
+.amino-progress-bar.with-time.small {
+    height: 14px;
+    border-radius: 2px;
+}
+
+.small .time {
+    line-height: 14px;
+    font-size: 10px;
+}
+
+.amino-progress-bar.lighter {
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.5);
+}
+
+.active-bar {
+    height: 100%;
+    width: 75%;
+    background: #2390ff;
+}
+
+.time {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 28px;
+}
+
+.time.left {
+    left: 10px;
+}
+
+.time.right {
+    right: 10px;
+}
+.series-number {
+    position: absolute;
+    background-color: #2390ff;
+    top: 0;
+    right: 0;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    z-index: 2;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 0 7px #333;
+}
+
+.page-control-menu {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.amino-item.series-item {
+    position: relative;
+}
+
+.dropdown-sample {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.align-right .dropdown-sample {
+    margin-right: 0;
+}
+
+.channel-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.channel-list li {
+    display: inline-block;
+    padding: 5px;
+    transition: background 0.2s linear;
+}
+
+.channel-list li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.channel-list li.selected {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.channel-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/bbc.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/itvlarge.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/CH4large.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/BBC2Large.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo5 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/BBCe.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+.channel-logo6 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/BBCl.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo7 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/BBCk.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+.channel-logo8 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/BBCw.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo9 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/cnbc.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo10 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/disney.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo11 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/history.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo12 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/mtv.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo13 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/cnn.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo14 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/drama.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo15 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/food.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo16 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/zee.jpg);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo17 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/sony.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo18 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/espn.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo19 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/bbcworld.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-logo20 {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #af7f90;    
+    background-image: url(../images/weather.png);
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+}
+
+.channel-info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    width: 180px;
+    overflow: hidden;
+}
+
+.channel-info .title,.channel-info .description {
+    font-size: 13px;
+    color: #5c6c73;
+}
+
+.channel-info .title {
+    font-weight: bold;
+}
+
+.channel-list-container {
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0 10px;    
+    background-color: rgba(35, 39, 41, 0.9);
+    color: #eee;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.row-nav .nav {
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    padding: 0;
+}
+
+.channel-list-container:hover .nav, .channel-list-container:focus .nav, .channel-list-container:active .nav,
+.amino-row:hover .nav, .amino-row:focus .nav, .amino-row:active .nav  {
+    opacity: 1;
+}
+
+.nav-left {
+    left: 0;
+}
+
+.nav-right {
+    right: 0;
+}
+
+.epg-container {
+    overflow: hidden;
+    height: calc(100% - 130px);
+}
+
+.rpg-column-container {
+    overflow: hidden;
+}
+
+.rpg-column {
+    height: 100%;
+}
+
+.rpg-section {
+    color: #eee;
+}
+
+.rpg-current-program {
+    height: 91px;
+}
+
+.rpg-current-program .item-image {
+    height: calc(100% - 6px);
+    padding-bottom: 0;
+}
+
+.rpg-current-program .item-image2 {
+    height: calc(100% - 6px);
+    padding-bottom: 0;
+}
+
+.rpg-current-program .item-image5 {
+    height: calc(100% - 6px);
+    padding-bottom: 0;
+}
+
+.rpg-section.active {
+    overflow-y: scroll;
+    height: calc(100% - 157px);
+}
+
+.program-time {
+    font-weight: 500;
+    font-size: 13px;
+    color: #919fa7;
+    line-height: 55px;
+}
+
+.program-title {
+    height: 55px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+}
+
+.program-title a {
+    color: #eee;
+}
+
+.program-title, .program-time, .program-button, .rpg-date, .rpg-date-control {
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+.program-button, .rpg-date-control {
+    justify-content: center;
+}
+
+.program-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 0;
+}
+
+.program-row:last-child {
+    border-bottom: none;
+}
+
+.rpg-date, .rpg-date-control {
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.rpg-date-control .fa {
+    margin: 0 3px;
+}
+
+.rpg-row.date-row.row {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.rpg-section-change, .rpg-section-change a {
+    font-weight: 500;
+    font-size: 13px;
+    color: #919fa7;
+    text-decoration: none;
+}
+
+.rpg-section-change a:hover, .rpg-section-change a:focus, .rpg-section-change a:active {
+    color: #eee;
+}
+
+.rpg-section.past {
+    background: #404c52;
+}
+
+.amino-modal .modal-dialog {
+    width: 960px;
+}
+
+.amino-modal .modal-content {
+    background-color: #5c6c73;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.modal-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #5c6c73;
+    background-size: cover;
+    filter: blur(30px);
+    z-index: -1;
+}
+
+.amino-modal .modal-header {
+    background-color: rgba(61, 72, 78, 0.5);
+    border-bottom: none;
+    color: #eee;
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.amino-modal .modal-header .dialog-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.amino-modal .modal-body {
+    color: #eee;
+    padding: 0;
+}
+
+.amino-modal .dialog-control {
+    font-size: 23px;
+    line-height: 45px;
+}
+
+.modal-title-container h3.title {
+    white-space: normal;
+    overflow: initial;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.modal-progress-container .amino-progress-bar {
+    width: 80%;
+}
+
+.button-row {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.button-row li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.amino-btn.btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #3d484e;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: transform 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+}
+
+.amino-btn.btn:hover, .amino-btn.btn:focus, .amino-btn.btn:active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.amino-btn>i {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.amino-btn.btn.btn-dark {
+    background-color: rgba(92, 108, 115, 0.8);
+    color: #fff;
+}
+
+.amino-btn.btn.btn-dark:hover, .amino-btn.btn.btn-dark:focus, .amino-btn.btn.btn-dark:active {
+    background-color: rgba(92, 108, 115, 1);
+}
+
+.btn-group-lg>.btn.amino-btn, .btn-lg.amino-btn {
+    font-size: 15px;
+    padding: 15px 25px;
+}
+
+.status-item {
+    margin-right: 15px;
+}
+
+
+.status-item:last-child {
+    margin-right: 0px;
+}
+
+.modal-title-container {
+    margin-bottom: 20px;
+}
+
+.modal-buttons-container {
+    margin-top: 20px;
+}
+
+.modal-control-container, .modal-description-container {
+    padding: 20px 10px;
+}
+
+.modal-description-container {
+    background-color: rgba(61, 72, 78, 0.7);
+}
+
+.login-cover {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    min-height: 300px;
+}
+
+.login-form-container form {
+    width: 80%;
+}
+
+.client-logo img {
+    height: 100%;
+}
+
+ul.slick-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.slick-list li {
+    display: inline-block;
+}
+
+.slick-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.slick-dot:hover, .slick-dot:focus, .slick-dot:active {
+    background-color: rgba(170, 170, 170, 0.5);
+}
+
+.selected .slick-dot {
+    background-color: #eee;
+    border-color: #eee;
+}   
+
+/* Bootstrap buttons */
+
+.btn {
+    padding: 9px 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 4px #333;
+    transition: transform 0.2s linear, background-color 0.2s linear, box-shadow 0.2s linear;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 16px #333;
+}
+
+@media (max-width: 1200px) {
+    .page-body {
+        width: 1080px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .page-body {
+        width: 960px;
+    }
+}
+
+@media (max-width: 960px) {
+    .page-body {
+        width: 100%;
+    }
+
+    .banner-list li {
+        min-width: 480px;
+    }
+
+    .amino-modal .modal-dialog {
+        width: 720px;
+    }
+
+    .channel-info {
+        width: 150px;
+    }
+    .login-cover {
+        height: 160px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .container-fluid.amino-row {
+        padding: 10px 10px;
+    }
+
+    .banner-list li {
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .nav-menu.fa-ul a li {
+        text-align: center;
+    }
+
+    .nav-menu.fa-ul a:hover, .nav-menu.fa-ul a:focus, .nav-menu.fa-ul a:active {
+        padding-left: 15px;
+    }
+
+    .amino-modal .modal-dialog {
+        width: 100%;
+        margin: 0;
+    }
+
+    .amino-modal .modal-content {
+        min-height: 100%;
+        border-radius: 0;
+    }
+
+    .modal-image {
+        width: 80%;
+        margin: auto auto 20px auto;
+    }
+
+    .modal-title-container, .modal-progress-container, .modal-buttons-container, .modal-header .page-title  {
+        text-align: center;
+    }
+    
+    .modal-progress-container .amino-progress-bar {
+        margin: auto;
+    }
+
+    h3.title {
+        font-size: 19px;
+    }
+
+    .channel-info {
+        display: none;
+    }
+
+    .login-cover {
+        height: 120px;
+    }
+
+}

@@ -14,7 +14,6 @@ foreach ($inputfields as $field) {
 if ($error) { 
  echo json_encode(array("status" => "Missing fields!"));
  exit();
-
 }else { 
   include("lib/mailer.php");
   sendMail($sendParams["form-email"], $sendParams["form-sender-name"], $sendParams["form-message"]);

@@ -53,8 +53,10 @@ $(function()
 				onLoadEnd:	 function() { activityIndicatorOff(); captionOn();}
 			});
 
-			$('[data-toggle="tooltip"]').tooltip();
-
+			if (undefined === window.ontouchstart) {
+				$('[data-toggle="tooltip"]').tooltip();
+			}
+		
 			function mailSuccess(el) {
 			    $(el).parent().fadeOut();
 			    $('#success-contact-message').fadeIn();
