@@ -14,7 +14,7 @@ $(function()
 
 			activityIndicatorOn = function()
 			{
-				$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+				$( '<div id="imagelightbox-loading"><div class="Cube panelLoad"><div class="cube-face cube-face-front">Ho</div><div class="cube-face cube-face-back">Mi</div><div class="cube-face cube-face-left">Lo</div><div class="cube-face cube-face-right">Di</div><div class="cube-face cube-face-bottom">La</div><div class="cube-face cube-face-top">Ro</div></div></div>' ).appendTo( 'body' );
 			},
 			activityIndicatorOff = function()
 			{
