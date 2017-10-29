@@ -66,7 +66,8 @@ $(function()
 			    $('#contact-form-warning').fadeIn(200);
 			    }
 
-			$('a[rel]').click(function(){ 
+			$('a[rel]').click(function(element,e){ 
+
 
 				if ($(this).hasClass('navbar-brand')) {
 
@@ -76,7 +77,7 @@ $(function()
 				$(this).parent().addClass("active").siblings().removeClass("active");  
 				
 				var pageId = "#"+$(this).attr("rel");  
-				$('div.page'+pageId).siblings().fadeOut(200).end().fadeIn(800);  
+				$('div.page'+pageId).siblings().fadeOut(200, 'swing', function() {window.scrollTo(0,0)}).end().fadeIn(900);  
 				$("button[aria-expanded=true]").click();
 
 			    });
@@ -104,7 +105,9 @@ $(function()
 
 			window.onhashchange = function() {   
 				var address = window.location.hash;
+				window.setTimeout(function() {  
 				$('a[rel=' + address.replace("#","") + ']').click();
+				},600);
 			};
 
 
